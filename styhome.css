@@ -1,0 +1,61 @@
+body{
+    margin: 0px;
+}
+/*A partir daqui temos todas as informações que envolvem o menu da página*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #aeb0bc;
+    width: auto;
+    margin: 0;
+    height: 130px;
+    padding: 10px;
+}
+/*Aqui é a única informação do logo*/
+.logo{
+    height: 100px;
+    width: 200px;
+    margin-left: 40px;
+    padding-top: 30px;
+}
+/*Aqui temos as informações do menu clicável*/
+.nav-bar a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar li a:hover{
+    color:#d5d5d5;
+}
+
+ul{
+    margin-right: 30px;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 40px;
+    border-right: 2px solid white;
+}
+
+/*A partir daqui temos as infomrações da barra de pesquisa*/
+.search{
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #d5d5d5;
+    color: white;
+    padding: 0px 40px;
+    margin-right: 40px;
+    
+}
+
+.search img{
+    padding: 0px 10px;
+}
