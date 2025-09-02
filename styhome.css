@@ -1,16 +1,18 @@
 body{
     margin: 0px;
+    background-color: #aeb0bc;
 }
 /*A partir daqui temos todas as informações que envolvem o menu da página*/
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #aeb0bc;
     width: auto;
     margin: 0;
     height: 130px;
     padding: 10px;
+    /* Adiciona uma sombra na parte inferior */
+    box-shadow: 0 4px 11px rgba(0, 0, 0, 0.3);
 }
 /*Aqui é a única informação do logo*/
 .logo{
@@ -30,19 +32,19 @@ header{
     color:#d5d5d5;
 }
 
-ul{
+.nav-bar ul{
     margin-right: 30px;
     padding: 0;
 }
 
-li{
+.pags-nav-bar{
     list-style: none;
     display: inline-block;
     padding: 10px 40px;
     border-right: 2px solid white;
 }
 
-/*A partir daqui temos as infomrações da barra de pesquisa*/
+/*A partir daqui temos as informações da barra de pesquisa*/
 .search{
     display: flex;
     align-items: center;
@@ -58,4 +60,29 @@ li{
 
 .search img{
     padding: 0px 10px;
+}
+#banner{
+    background-color: white;
+    padding: 300px;
+    margin-top: 50px;
+}
+.nossos-profissionais{
+    align-items: center;
+    color:dimgray;
+    text-align: center;
+    font-size: 30px;
+}
+.nossos-profissionais h1{
+    border-top: dimgray solid 1px; /* Ainda não consegui deixar igual ao mockup! */
+    border-bottom: dimgray solid 1px;
+}
+.nossos-profissionais ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.nomes-prof{
+    background-color: white;
+    padding: 150px 100px;
+    margin-right: 5px;
 }
