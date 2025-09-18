@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    background-color: #aeb0bc;
+    background-color: #a8bcb3;
 }
 /*A partir daqui temos todas as informações que envolvem o menu da página*/
 header{
@@ -8,40 +8,43 @@ header{
     justify-content: space-between;
     align-items: center;
     width: auto;
-    margin: 0;
-    height: 130px;
-    padding: 10px;
+    height: 140px;
+    
     /* Adiciona uma sombra na parte inferior */
     box-shadow: 0 4px 11px rgba(0, 0, 0, 0.3);
 }
 /*Aqui é a única informação do logo*/
 .logo{
-    height: 100px;
-    width: 200px;
-    margin-left: 40px;
-    padding-top: 30px;
+    width:190px;
+    
 }
+
 /*Aqui temos as informações do menu clicável*/
+.nav-bar{
+    color:#FFFFFF;
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: 600;
+}
+
 .nav-bar a{
-    font-size: 20px;
     text-decoration: none;
     color: white;
 }
 
+/* HOVER altera alguma propriedade ao passar o cursor pela categoria  */
 .nav-bar li a:hover{
     color:#d5d5d5;
-}
-
-.nav-bar ul{
-    margin-right: 30px;
-    padding: 0;
 }
 
 .pags-nav-bar{
     list-style: none;
     display: inline-block;
-    padding: 10px 40px;
+    padding: 30px 25px;
     border-right: 2px solid white;
+}
+#blog{
+    border-right:none;
 }
 
 /*A partir daqui temos as informações da barra de pesquisa*/
@@ -49,17 +52,24 @@ header{
     display: flex;
     align-items: center;
     border: 1px solid transparent;
-    height: 50px;
-    border-radius: 20px;
-    background-color: #d5d5d5;
-    color: white;
-    padding: 0px 40px;
-    margin-right: 40px;
+    height: 51px;
+    width:200px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    color: #5b6b66;
+    padding: 0px 20px;
+    margin-right: 50px;
+    margin-left: 5px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 24px;
     
 }
-
 .search img{
-    padding: 0px 10px;
+    padding: 6px;
+    width:auto;
+    height:47px;
+
 }
 #banner{
     background-color: white;
