@@ -16,7 +16,12 @@ header{
 /*Aqui é a única informação do logo*/
 .logo{
     width:190px;
-    
+    height: auto;
+}
+.logo img{
+    height:250px;
+    width:auto;
+    margin-left: 30px;
 }
 
 /*Aqui temos as informações do menu clicável*/
@@ -34,7 +39,7 @@ header{
 
 /* HOVER altera alguma propriedade ao passar o cursor pela categoria  */
 .nav-bar li a:hover{
-    color:#d5d5d5;
+    border-bottom: #FFFFFF 2px solid;
 }
 
 .pags-nav-bar{
@@ -57,7 +62,7 @@ header{
     border-radius: 10px;
     background-color: #FFFFFF;
     color: #5b6b66;
-    padding: 0px 20px;
+    padding: 0px 30px;
     margin-right: 50px;
     margin-left: 5px;
     font-family: Inter;
@@ -66,7 +71,7 @@ header{
     
 }
 .search img{
-    padding: 6px;
+    padding: 70px;
     width:auto;
     height:47px;
 
@@ -78,21 +83,53 @@ header{
 }
 .nossos-profissionais{
     align-items: center;
-    color:dimgray;
+    color:#5b6b66;
     text-align: center;
     font-size: 30px;
 }
-.nossos-profissionais h1{
-    border-top: dimgray solid 1px; /* Ainda não consegui deixar igual ao mockup! */
-    border-bottom: dimgray solid 1px;
+@font-face{
+    font-family:Brandis;
+    src: url('./fontes/Brandis.otf');
 }
-.nossos-profissionais ul{
+.titulo-tipo-um{
+    text-align: center;
+    font-size: 64px;
+    /*border: #5b6b66 solid 1px;
+    border-right: none;
+    border-left: none;
+    width: 800px;*/ 
+    font-family: Brandis;
+    font-weight: 400;
+    color: #5b6b66;
+    margin-top: 100px;
+}
+.nossos-profissionais{
     display: flex;
     justify-content: space-between;
-    list-style: none;
+    align-items: center;
 }
-.nomes-prof{
-    background-color: white;
-    padding: 150px 100px;
-    margin-right: 5px;
+.nomes-profissionais{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 65px;
+    font-family: Anonymous Pro;
+    font-weight: 400;
+    font-size: 24px;
+    color: #5b6b66;
 }
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5b6b66;
+    margin: 0;
+}
+.icones-rodape{
+    display: flex;
+    justify-content: space-between;
+    height:200px;
+    width: auto;
+}
+
+
