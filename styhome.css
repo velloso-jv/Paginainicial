@@ -55,8 +55,8 @@ header{
 /*A partir daqui temos as informações da barra de pesquisa*/
 .search{
     display: flex;
-    align-items: center;
     border: 1px solid transparent;
+    align-items: center;
     height: 51px;
     width:200px;
     border-radius: 10px;
@@ -67,17 +67,16 @@ header{
     margin-left: 5px;
     font-family: Inter;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 16px;
     
 }
 .search img{
-    padding: 70px;
+    padding: 10px;
     width:auto;
     height:47px;
-
 }
 #banner{
-    background-color: white;
+    background-color: #FFFFFF;
     padding: 300px;
     margin-top: 50px;
 }
@@ -91,17 +90,18 @@ header{
     font-family:Brandis;
     src: url('./fontes/Brandis.otf');
 }
-.titulo-tipo-um{
+.titulo-nossos-profissionais{
     text-align: center;
     font-size: 64px;
-    /*border: #5b6b66 solid 1px;
-    border-right: none;
-    border-left: none;
-    width: 800px;*/ 
+    border-top: 1px solid #5b6b66;
+    border-bottom: 1px solid #5b6b66;
+    width: 730px;
+    padding: 20px;
     font-family: Brandis;
     font-weight: 400;
     color: #5b6b66;
     margin-top: 100px;
+    margin-left: 360px;
 }
 .nossos-profissionais{
     display: flex;
@@ -113,23 +113,85 @@ header{
     justify-content: space-between;
     align-items: center;
     margin: 65px;
-    font-family: Anonymous Pro;
+    font-family: Inter;
     font-weight: 400;
     font-size: 24px;
     color: #5b6b66;
 }
+.titulo-principal-noticias{
+    text-align: center;
+    font-size: 64px;
+    border-top: 1px solid #5b6b66;
+    width: 1350px;
+    padding: 20px;
+    font-family: Brandis;
+    font-weight: 400;
+    color: #5b6b66;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.noticias{
+    background-color:#fafffe74;
+    height: 420px;
+    width: 100%;
+    font-family: Inter;
+    color:#5b6b66;
+    font-size: 36px;
+}
+.noticias img{
+    width: 362px;
+    height: 345px;
+    opacity: 100%;
+    background-color: #FFFFFF;
+    margin: 30px;
+}
+.titulo-noticia{
+    font-weight: 600;
+    margin-left: 430px;
+    margin-top: -350px;
+    border-bottom: 1px solid #5b6b66;
+    width: 418px;
+}
+.texto-noticia{
+    font-weight: 400;
+    font-style: italic;
+    margin-left: 430px;
+}
 .rodape{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: #5b6b66;
     margin: 0;
+    margin-bottom: none;
+    font-family: Inter;
+    color:#FFFFFF;
+    font-size: 24px;
+    font-weight: 400;
+    max-height: 376px;
+}
+.logo-rodape{
+    width: 400px;
+    height: auto;
+    margin-left: 50px;
 }
 .icones-rodape{
     display: flex;
-    justify-content: space-between;
-    height:200px;
-    width: auto;
+    flex-direction: column;
+    width:80px;
+    height:auto;
+    margin-left: 90px;
 }
+.texto-icones-rodape{
+    display: flex;
+    flex-direction: column;
+    margin-left: 110px;
+}
+.texto-adicional{
+    display: flex;
+    flex-direction: column;
+    margin-left: 240px;
+    margin-top: -70px;
+}
+
 
 
