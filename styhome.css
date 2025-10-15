@@ -362,3 +362,131 @@ header{
 .form-container button:hover {
     background-color: #4C5954;
 }
+/* Página Sobre Nós */
+.sobre-nos{
+    font-family: Inter;
+    color: #5b6b66;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between 5px;
+    font-family: Inter;
+    font-size: 1.5rem;
+}
+.sobre-nos p{
+    text-align: justify;
+    margin-top: 10%;
+    width: 40%;
+}
+.sobre-nos img{
+    width: 45%;
+    height: auto;
+    margin-left: 7%;
+    margin-bottom: 7%;
+    margin-top: 1%;
+    margin-right: 4%;
+}
+.sobre-nos-dois {
+    font-family: Inter;
+    color: #5b6b66;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
+    margin-left: 10%;
+    margin-bottom: 7%;
+    flex-wrap: wrap;
+    font-family: Inter;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+}
+.sobre-nos-dois p{
+    text-align: justify;
+    width: 45%;
+}
+.sobre-nos-dois img{
+    width: 30%;
+    height: auto;
+}
+
+/* Missão, Visão e Valores */
+.missao-visao-valores{
+    font-family: Inter;
+    color: #5b6b66;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    gap: 10%;
+    margin-right: 10%;
+    margin-bottom: 7%;
+}
+.titulo-missao-visao-valores {
+    font-family: Brandis;
+    color: #5b6b66;
+    font-size: 3rem;
+    margin-left: 54%;
+    position: absolute;
+}
+.missao-visao-valores p{
+    width: 40%;
+    text-align: left;
+    margin-bottom: -2%;
+}
+.missao-visao-valores img{
+    width: 43%;
+    height: auto;
+}
+
+/* Diferencial da Carvi Clinic */
+.titulo-diferencial{
+    font-family: Brandis;
+    color: #5b6b66;
+    font-size: 3rem;
+    text-align: center;
+}
+.diferencial{
+    font-family: Inter;
+    color: #5b6b66;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    gap: 5%;
+    margin-left: 2%;
+    margin-bottom: 7%;
+}
+.diferencial p{
+    background-color: #d9d9d9;
+    width: 25%;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    padding: 2%;
+    text-align: left;
+}
+
+/* Horário de funcionamento e vias de contato */
+.horarios-contatos{
+    font-family: Inter;
+    font-size: 1.5rem;
+    color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    box-sizing: border-box;
+    width: 40%;
+    margin-bottom: 7%;
+    margin-left: 30%;
+    background-color: #5b6b66;
+    border: 1px solid #5b6b66;
+    border-radius: 10px;
+    padding: 2%;
+}
+.horarios-contatos h2{
+    margin: 0;
+    text-align: left;
+}
