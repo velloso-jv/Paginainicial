@@ -272,63 +272,7 @@ header{
     text-decoration: none;
     color: #FFFFFF;
 }
-/* Título principal */
-.nosso-espacoh1 {
-    color: #4B4F4D;
-    border-top: 1px solid #4B4F4D;
-    border-bottom: 1px solid #4B4F4D;
-    margin-bottom: 50px;
-    margin-top: 40px;
-    font-size: 30px;
-    letter-spacing: 1px;
-    width: 17%;
-    padding-bottom: 8px;
-    padding-top: 3px;
-}
 
-/* Blocos de imagem + texto */
-.bloco {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 60px auto;
-    gap: 40px;
-    max-width: 900px;
-}
-
-/* Inverte ordem dos elementos */
-.txtespaco{
-    text-align: center;
-}
-.bloco2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 60px auto;
-    gap: 40px;
-    max-width: 900px;
-}
-
-/* Área da imagem*/
-.foto {
-    width: 250px;
-    height: 250px;
-    background-color: #E8EDE9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    font-size: 14px;
-    color: #333;
-}
-
-/* Texto */
-.texto p {
-    max-width: 300px;
-    text-align: left;
-    line-height: 1.5;
-    font-size: 15px;
-}
 /* Container do formulário */
 .form-container {
     background-color: #C0CEC6;
@@ -517,4 +461,69 @@ header{
     text-align: left;
 }
 
+/* Página Nosso Espaço */
 
+/* Blocos de imagem + texto */
+.bloco-um-nosso-espaco {
+    font-family: Inter;
+    color: #5b6b66;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 7%;
+    margin-top: 5%;
+    margin-right: 15%;
+}
+
+.bloco-um-nosso-espaco img {
+    width: 35%;
+    height: auto;
+}
+
+.bloco-um-nosso-espaco p {
+    text-align: justify;
+    width: 42%;
+}
+
+.texto-meio {
+    font-family: Inter;
+    color: #5b6b66;
+    font-size: 1.5rem;
+    text-align: justify;
+    align-items: center;
+    width: 65%;
+    margin-top: 5%;
+    margin-left: 17%;
+    box-sizing: border-box;
+    background-color: #d9d9d9;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.bloco-dois-nosso-espaco {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5% 10%;
+    gap: 5%; 
+    border-top: 1px solid #5b6b66;
+    padding-top: 5%;
+
+}
+
+.bloco-dois-nosso-espaco img {
+    width: 30%;
+    height: auto;
+}
+
+.texto-tres {
+    font-family: Inter;
+    font-size: 1.5rem;
+    color:#5b6b66;
+    text-align: justify;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
