@@ -11,17 +11,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Aqui temos apenas informações do cabeçalho/home da página, que engloba o logo, barra de navegação e pesquisa-->
-    <header>
+    
+    <header> <!-- Cabeçalho -->
         <!--Informações sobre o logotipo-->
         <div class="logo">
-            <img src="./icons/logo Carvi Clinic.png" alt="logo da clínica">
+            <a href="home.html"><img src="./icons/logo Carvi Clinic.png" alt="logo da clínica"></a>
         </div>
 
         <!--Informações da barra de navegação clicável-->
         <div class="nav-bar">
             <ul>
-                <li class="pags-nav-bar" id="procedimentos">
+                <li class="pags-nav-bar">
                     <a href="procedimentos.html">PROCEDIMENTOS</a>
                 </li>
                 <li class="pags-nav-bar">
@@ -33,12 +33,11 @@
                 <li class="pags-nav-bar">
                     <a href="agendamentos.html">AGENDAMENTOS</a>
                 </li>
-                <li class="pags-nav-bar" id="blog">
+                <li class="pags-nav-bar">
                     <a href="blog.html">BLOG</a>
                 </li>
             </ul>
         </div>
-
         <!--Informações da barra de pesquisa-->
         <div class="search">
             <form action="#" method="get">
@@ -50,61 +49,88 @@
     
     <!--Banner página inicial-->
     <div class="conteudo-banner">
+        <div class="texto-banner">
             <h1>CARVI CLINIC</h1>
             <p class="texto-banner">
                 Tratamentos que renovam <strong>sua imagem</strong><br>
                 e elevam <strong>sua autoestima</strong>
             </p>
             <a href="agendamentos.html">Agendar uma consulta</a>
-            <img src="Dr. Filipe Duarte banner.jpg" alt="Dr. Filipe Duarte">
+            </div>
+        <img src="imagens da clinica/Imagem Banner.jpg" alt="Procedimento">
+    </div>
+
+    <!-- Apresentação de produtos da Carvi Clinic -->
+     <section class="procedimentos-home">
+        <h1>Carvi Clinic: conheça nosso trabalho</h1>
+        <p style="background-color: #d9d9d9; box-shadow: 0 4px 11px rgba(0, 0, 0, 0.3); padding: 2%; font-weight: 400;">
+            Somos referência no mercado da beleza do Rio de Janeiro, por meio de nossos tratamentos de qualidade, <br>
+            tecnologia de ponta, e olhar artístico sobre as características de cada cliente. <br> 
+            Veja nossos procedimentos mais famosos:
+        </p>
+
+        <div class="img-procedimentos">
+            <a href="procedimentos.html"><img src="imagens da clinica/Harmonização.jpg" alt=""><p>Harmonização facial</p></a>
+            <a href="procedimentos.html"><img src="imagens da clinica/Drenagem.jpg" alt=""><p>Drenagem linfática</p></a>
+            <a href="procedimentos.html"><img src="imagens da clinica/Botox.jpg" alt=""><p>Toxina botulínica (Botox)</p></a>
         </div>
-    </div>
+        
+        <div class="img-procedimentos-dois">
+            <a href="procedimentos.html"><img src="imagens da clinica/Preenchimento labial.jpg" alt=""><p>Preenchimento com ácido hialurônico</p></a>
+            <a href="procedimentos.html"><img src="imagens da clinica/Lipo.jpg" alt=""><p>Lipo enzimática</p></a>
+            <a href="procedimentos.html"><img src="imagens da clinica/Limpeza de pele.jpg" alt=""><p>Limpeza de pele profunda</p></a>
+        </div>
 
-    <!--Seção Nossos Profissionais-->
-    <h1 class="titulo-nossos-profissionais">NOSSOS PROFISSIONAIS</h1>
-    <!--Imagens Nossos Profissionais-->
-    <div class="img-nossos-profissionais">
-        <img src="Dr. Filipe Duarte home.png" alt="Dr. Filipe Duarte">
-        <img src="Dra. Melânia Pênedo home.png" alt="Dra. Melânia Pênedo">
-        <img src="Dra. Marina Pinheiro home.png" alt="Dra. Marina Pinheiro">
-    </div>
+        <div class="botao-procedimentos"><a href="procedimentos.html">VER TODOS OS PROCEDIMENTOS</a></div>
+     </section>
 
-    <!--Nomes Nossos Profissionais-->
-    <div class="nomes-profissionais">
-        <p class="nomes-profissionais-um">Dr. Filipe Duarte</p>
-        <p class="nomes-profissionais-dois">Dra. Melânia Pênedo</p>
-        <p class="nomes-profissionais-tres">Dra. Marina Pinheiro</p>
-    </div>
-
-   <!-- Depoimentos -->
+    <!-- Depoimentos -->
     <h1 class="titulo-principal-depoimentos">DEPOIMENTOS</h1>
     <div class="depoimentos">
-        <p class="titulo-depoimento">Ana Paula R, 34 anos</p>
+        <p class="titulo-depoimento">Aurélia R, 57 anos</p>
         <P class="texto-depoimento">"Resultados incríveis e superaram minhas expectativas! <br>
-        O profissionalismo da equipe é notável. <br>
-        O resultado do procedimento que fiz ficou natural e elegante, <br>
+        A equipe é muito profissional. <br>
+        O resultado do procedimento que eu fiz ficou bem natural, <br>
         exatamente como eu queria. <br>
         Recomendo pela excelência e segurança."</P>
     </div>
 
-    <!-- Configurações para a publicação do meio com alinhamento diferente -->
     <div class="depoimentos">
         <p class="titulo-depoimento">Ricardo F, 41 anos</p>
         <P class="texto-depoimento">"Clínica maravilhosa, ambiente acolhedor <br>
         e atendimento impecável. Senti total confiança na equipe, <br>
-        que sugere o melhor, sem exageros."</P>
+        que se preocupou o tempo todo em fazer exatamente <br>
+        como eu queria, sem exageros."</P>
     </div>
 
     <div class="depoimentos">
         <p class="titulo-depoimento">Juliana M, 29 anos</p>
         <P class="texto-depoimento">"Não é só estética, é autoestima! <br>
-        O acompanhamento pós-procedimento é atencioso. <br>
-        Saio renovada a cada visita. <br>
-        A clínica valoriza o cuidado integral. Nota 10!"</P>
+        Gostei muito do acompanhamento pós-procedimento. <br>
+        São muito atenciosos! Saio renovada a cada visita. Nota 10!"</P>
     </div>
+    
+    <!--Seção Nossos Profissionais-->
+    
+    <h1 class="titulo-nossos-profissionais">NOSSOS PROFISSIONAIS</h1>
+    <section class="nossos-profissionais">
+        <div class="img-e-nome"><img src="Dr. Filipe Duarte home.png" alt="Dr. Filipe Duarte"> 
+            <p>Dr. Filipe Duarte <br>
+            Formação: Cirurgião-dentista
+        </p></div>
+        <div class="img-e-nome"><img src="Dra. Melânia Pênedo home.png" alt="Dra. Melânia Pênedo"> 
+            <p>Dra. Melânia Pênedo <br>
+            Formação: Farmacêutica e <br> Cosmetóloga
+        </p></div>
+        <div class="img-e-nome"><img src="Dra. Marina Pinheiro home.png" alt="Dra. Marina Pinheiro"> 
+            <p>Dra. Marina Pinheiro <br>
+            Formação: Médica
+        </p></div>
+    </section>
+    
 
     <!--RODAPÉ-->
-    <div class="rodape">
+    <footer>
         <img class="logo-rodape" src="./icons/logo Carvi Clinic.png" alt="logomarca Carvi Clinic">
 
         <div class="icones-rodape">
@@ -137,9 +163,10 @@
                 <p>Envie aqui seu feedback</p>
             </a>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
+
 
 
 
