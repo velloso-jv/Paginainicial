@@ -3,35 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Procedimentos - Carvi Clinic</title>
-     <link rel="stylesheet" href="styhome.css">
+    <title>HOME - Carvi Clinic</title>
+    <link rel="stylesheet" href="styhome.css">
     <!-- Importação das fontes utilizadas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <!-- Aqui temos apenas informações do cabeçalho/home da página, que engloba o logo, barra de navegação e pesquisa-->
+<!-- Aqui temos apenas informações do cabeçalho/home da página, que engloba o logo, barra de navegação e pesquisa-->
     <header>
         <!--Informações sobre o logotipo-->
         <div class="logo">
-            <a href="home.html">
-                <img src="./icons/logo Carvi Clinic.png" alt="logo da clínica">
-            </a>
+            <img src="./icons/logo Carvi Clinic.png" alt="logo da clínica">
         </div>
+
         <!--Informações da barra de navegação clicável-->
         <div class="nav-bar">
             <ul>
                 <li class="pags-nav-bar" id="procedimentos">
-                    <a href="#">PROCEDIMENTOS</a>
+                    <a href="procedimentos.html">PROCEDIMENTOS</a>
                 </li>
-                <li class="pags-nav-bar"><a href="sobrenos.html">SOBRE NÓS</a></li>
-                <li class="pags-nav-bar"><a href="nossoespaco.html">NOSSO ESPAÇO</a></li>
-                <li class="pags-nav-bar"><a href="agendamentos.html">AGENDAMENTOS</a></li>
-                <li class="pags-nav-bar" id="blog"><a href="blog.html">BLOG</a></li>
+                <li class="pags-nav-bar">
+                    <a href="sobrenos.html">SOBRE NÓS</a>
+                </li>
+                <li class="pags-nav-bar">
+                    <a href="nossoespaco.html">NOSSO ESPAÇO</a>
+                </li>
+                <li class="pags-nav-bar">
+                    <a href="agendamentos.html">AGENDAMENTOS</a>
+                </li>
+                <li class="pags-nav-bar" id="blog">
+                    <a href="blog.html">BLOG</a>
+                </li>
             </ul>
         </div>
-<!--Informações da barra de pesquisa-->
+
+        <!--Informações da barra de pesquisa-->
         <div class="search">
             <form action="#" method="get">
                 <input type="text" placeholder="BUSCAR" name="busca">
@@ -39,35 +46,153 @@
             </form>
         </div> 
     </header>
-    
-
-    <!-- RODAPÉ-->
-    <div class="rodape">
-        <img class="logo-rodape" src="./icons/logo Carvi Clinic.png" alt="logomarca Carvi Clinic">
-        <div class="icones-rodape">
-            <a href="https://www.instagram.com/carviclinic/"><img class="icones-rodape" src="./icons/Ícone Instagram.png" alt=""></a>
-            <a href="">
-                <img class="icones-rodape" src="./icons/ícone Telefone.png" alt="">
-            </a>
-            <a href="https://www.google.com.br/maps/place/Union+Mall/@-22.9686891,-43.3687879,17z/data=!3m1!4b1!4m6!3m5!1s0x9bd938658e4049:0x9eb8e026c7727a87!8m2!3d-22.9686891!4d-43.366213!16s%2Fg%2F11vrrd8plh?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D">
-                <img class="icones-rodape" src="./icons/ícone Local.png" alt="">
-            </a>
-        </div>
-        <div class="texto-icones-rodape">
-            <a href="https://www.instagram.com/carviclinic/">
-                <p>@carviclinic</p>
-            </a>
-            <a href="">
-                <p>(21)97472-9384</p>
-            </a>
-            <a href="https://www.google.com.br/maps/place/Union+Mall/@-22.9686891,-43.3687879,17z/data=!3m1!4b1!4m6!3m5!1s0x9bd938658e4049:0x9eb8e026c7727a87!8m2!3d-22.9686891!4d-43.366213!16s%2Fg%2F11vrrd8plh?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D">
-                <p>Av. Ator José Wilker, 600 - Jacarepaguá, Rio de Janeiro</p>
-            </a>
-        </div>
-        <div class="texto-adicional">
-            <p>Política de privacidade</p>
-            <p>Envie aqui seu feedback</p>
-        </div>
+<body>
+  <div class="container-proc">
+    <div class="header-proc">
+      <h1 class="procedimentoh1">PROCEDIMENTOS</h1>
+      <nav class="menu-proc">
+        <button class="btn-proc ativo-proc" data-section="corporais">Corporais</button>
+        <button class="btn-proc" data-section="faciais">Faciais</button>
+      </nav>
     </div>
+
+    <main class="conteudo-proc" id="conteudo-proc"></main>
+  </div>
+
+  <script>
+    const dadosProcedimentos = {
+      corporais: [
+        {
+          nome: "Massagem Relaxante",
+          imagem:  "MassagemRelaxante.webp",
+          imagemDetalhe: "Paginainicial/MassagemRelaxante.webp",
+          descricao: "Sessão de massagem com movimentos suaves e profundos, pensada para aliviar tensões, melhorar a circulação e promover profundo relaxamento corporal.",
+          antes: "MassagemRelaxante.webp",
+          depois: "MassagemRelaxante.webp"
+        },
+        {
+          nome: "Drenagem Linfática",
+          imagem: "DrenagemLinfatica.jpeg",
+          imagemDetalhe: "DrenagemLinfatica.jpeg",
+          descricao: "Técnica manual que estimula o sistema linfático, auxiliando na redução de inchaços e retenção de líquidos.",
+          antes: "DrenagemLinfatica.jpeg",
+          depois: "DrenagemLinfatica.jpeg"
+        },
+        {
+          nome: "Modeladora Corporal",
+          imagem: "ModeladoraCorporal.jpeg",
+          imagemDetalhe: "ModeladoraCorporal.jpeg",
+          descricao: "Massagem profunda e enérgica que ajuda a modelar o contorno corporal e ativar a circulação.",
+          antes: "ModeladoraCorporal.jpeg",
+          depois: "ModeladoraCorporal.jpeg"
+        }
+      ],
+      faciais: [
+        {
+          nome: "Limpeza de Pele Profunda",
+          imagem: "limpezadePeleProfunda.jpeg",
+          imagemDetalhe: "limpezadePeleProfunda.jpeg",
+          descricao: "Procedimento para remoção de impurezas e células mortas, promovendo renovação e viço natural à pele do rosto.",
+          antes: "limpezadePeleProfunda.jpeg",
+          depois: "limpezadePeleProfunda.jpeg"
+        },
+        {
+          nome: "Peeling Químico",
+          imagem: "PeelingQuimico.jpeg",
+          imagemDetalhe: "PeelingQuimico.jpeg",
+          descricao: "Aplicação controlada de agentes químicos que estimulam renovação celular e uniformizam o tom da pele.",
+          antes: "PeelingQuimico.jpeg",
+          depois: "PeelingQuimico.jpeg"
+        },
+        {
+          nome: "Aplicação de Botox",
+          imagem: "botox.jpeg",
+          imagemDetalhe: "botox.jpeg",
+          descricao: "Procedimento para suavizar rugas e linhas de expressão, com resultado natural e rápido.",
+          antes: "botox.jpeg",
+          depois: "botox.jpeg"
+        }
+      ]
+    };
+
+    const conteudo = document.getElementById("conteudo-proc");
+    const botoes = document.querySelectorAll(".btn-proc");
+
+    botoes.forEach(btn => {
+      btn.addEventListener("click", () => {
+        botoes.forEach(b => b.classList.remove("ativo-proc"));
+        btn.classList.add("ativo-proc");
+        carregarSecao(btn.dataset.section);
+      });
+    });
+
+    function carregarSecao(secao) {
+      const procedimentos = dadosProcedimentos[secao];
+      conteudo.innerHTML = `
+        <div class="carrossel-proc">
+          ${procedimentos.map((p, i) => `
+            <div class="item-proc ${i === 1 ? "centro-proc" : ""}" 
+              style="background-image:url('${p.imagem}')" data-index="${i}"></div>
+          `).join("")}
+        </div>
+        <div class="nome-proc" id="nome-proc">Procedimento: ${procedimentos[1].nome}</div>
+        <div id="detalhes-wrapper-proc"></div>
+      `;
+      ativarCarrossel(procedimentos);
+    }
+
+    function ativarCarrossel(procedimentos) {
+      const carrossel = document.querySelector(".carrossel-proc");
+      const nomeProc = document.getElementById("nome-proc");
+      const detalhes = document.getElementById("detalhes-wrapper-proc");
+
+      let ordem = [...procedimentos];
+
+      function render() {
+        carrossel.innerHTML = ordem.map((p, i) => `
+          <div class="item-proc ${i === 1 ? "centro-proc" : ""}"
+            style="background-image:url('${p.imagem}')"></div>
+        `).join("");
+        nomeProc.textContent = "Procedimento: " + ordem[1].nome;
+
+        detalhes.innerHTML = `
+          <div class="detalhes-proc">
+            <div class="detalhe-grid-proc">
+              <div class="detalhe-imagem-proc" style="background-image:url('${ordem[1].imagemDetalhe}')"></div>
+              <div class="detalhe-texto-proc">
+                <h2>${ordem[1].nome}</h2>
+                <p>${ordem[1].descricao}</p>
+              </div>
+            </div>
+            <div class="galeria-proc">
+              <div class="card-proc">
+                <div class="label-proc">ANTES</div>
+                <div class="img-proc" style="background-image:url('${ordem[1].antes}')"></div>
+              </div>
+              <div class="card-proc">
+                <div class="label-proc">DEPOIS</div>
+                <div class="img-proc" style="background-image:url('${ordem[1].depois}')"></div>
+              </div>
+            </div>
+          </div>
+        `;
+
+        document.querySelectorAll(".item-proc").forEach((item, i) => {
+          item.addEventListener("click", () => {
+            if (i === 0) {
+              ordem.push(ordem.shift());
+              render();
+            } else if (i === 2) {
+              ordem.unshift(ordem.pop());
+              render();
+            }
+          });
+        });
+      }
+      render();
+    }
+
+    carregarSecao("corporais");
+  </script>
 </body>
 </html>
