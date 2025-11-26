@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    background-color: #a8bcb3;
+    font-family: Inter;
+}
+
+/* Menu da página */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 140px;
+    /* Adiciona uma sombra na parte inferior */
+    box-shadow: 0 4px 11px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    width: 190px;
+    height: auto;
+    box-sizing: border-box;
+}
+.logo img {
+    height: 250px;
+    width: auto;
+    margin-left: 30px;
+}
+
+.nav-bar {
+    color:#FFFFFF;
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: 600;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+/* HOVER altera alguma propriedade ao passar o cursor pela categoria  */
+.nav-bar li a:hover{
+    border-bottom: #FFFFFF 2px solid;
+}
+
+.pags-nav-bar{
+    list-style: none;
+    display: inline-block;
+    padding: 30px 25px;
+    border-right: 2px solid white;
+}
+#blog{
+    border-right: none;
+}
+
+/*A partir daqui temos as informações da barra de pesquisa*/
+.search input {
+    display: flex;
+    border: 1px solid transparent;
+    align-items: center;
+    height: 51px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    color: #5b6b66;
+    padding: 0px 15px;
+    margin-right: 50px;
+    margin-top: 8px;
+    margin-left: 5px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+}
+.search img {
+    padding: 5px;
+    width: auto;
+    height: 29px;
+}
+.search button {
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    margin-top: -50px;
+    margin-left: 180px;
+    position: absolute;
+}
+
+.titulo-sobre-nos {
+    text-align: center;
+    font-size: 3.5rem;
+    border-top: 1px solid #5b6b66;
+    border-bottom: 1px solid #5b6b66;
+    padding: 2%;
+    font-family: Brandis;
+    font-weight: 400;
+    color: #5b6b66;
+}
+
+/* Seção Rodapé */
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #5b6b66;
+    margin: 0;
+    font-family: Inter;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 400;
+    max-height: 376px;
+}
+.logo-rodape{
+    width: 400px;
+    height: auto;
+    margin-left: 50px;
+}
+.icones-rodape{
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    height: auto;
+    margin-left: 60px;
+}
+.icones-rodape a{
+    text-decoration: none;
+}
+.texto-icones-rodape{
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-top: 20px;
+    width: 250px;
+}
+.texto-icones-rodape a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.texto-icones-rodape p{
+    margin-bottom: 23px;
+}
+.texto-adicional{
+    display: flex;
+    flex-direction: column;
+    margin-left: 110px;
+    margin-top: -100px;
+}
+.texto-adicional a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Página Sobre Nós */
+.sobre-nos{
+    font-family: Inter;
+    color: #5b6b66;
+    display: flex;
+    flex-direction: row;
+    font-family: Inter;
+    font-size: 1.5rem;
+}
+
+.sobre-nos p{
+    text-align: justify;
+    margin-top: 10%;
+    width: 40%;
+}
+.sobre-nos img{
+    width: 45%;
+    height: auto;
+    margin-left: 7%;
+    margin-bottom: 7%;
+    margin-top: 1%;
+    margin-right: 4%;
+}
+.sobre-nos-dois {
+    font-family: Inter;
+    color: #5b6b66;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
+    margin-left: 10%;
+    margin-bottom: 7%;
+    flex-wrap: wrap;
+    font-family: Inter;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+}
+.sobre-nos-dois p{
+    text-align: justify;
+    width: 45%;
+}
+.sobre-nos-dois img{
+    width: 30%;
+    height: auto;
+}
+
+/* Missão, Visão e Valores */
+.missao-visao-valores{
+    font-family: Inter;
+    color: #5b6b66;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    gap: 10%;
+    margin-right: 10%;
+    margin-bottom: 7%;
+}
+.titulo-missao-visao-valores {
+    font-family: Brandis;
+    color: #5b6b66;
+    font-size: 3rem;
+    margin-left: 54%;
+    position: absolute;
+}
+.missao-visao-valores p{
+    width: 40%;
+    text-align: left;
+    margin-bottom: -2%;
+}
+.missao-visao-valores img{
+    width: 43%;
+    height: auto;
+}
+
+/* Diferencial da Carvi Clinic */
+.titulo-diferencial{
+    font-family: Brandis;
+    color: #5b6b66;
+    font-size: 3rem;
+    text-align: center;
+}
+.diferencial{
+    font-family: Inter;
+    color: #5b6b66;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    gap: 5%;
+    margin-left: 2%;
+    margin-bottom: 7%;
+}
+.diferencial p{
+    background-color: #d9d9d9;
+    width: 25%;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    padding: 2%;
+    text-align: left;
+}
+
+/* Horário de funcionamento e vias de contato */
+.horarios-contatos{
+    font-family: Inter;
+    font-size: 1.5rem;
+    color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    box-sizing: border-box;
+    width: 40%;
+    margin-bottom: 7%;
+    margin-left: 30%;
+    background-color: #5b6b66;
+    border: 1px solid #5b6b66;
+    border-radius: 10px;
+    padding: 2%;
+}
+.horarios-contatos h2{
+    margin: 0;
+    text-align: left;
+}
