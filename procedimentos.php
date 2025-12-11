@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME - Carvi Clinic</title>
+    <link rel="stylesheet" href="procedimentos.css">
+    <!-- Importação das fontes utilizadas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<?php
+    include("header.php");
+?>
+
+<body>
+  <div class="container-proc">
+    <div class="header-proc">
+      <h1 class="procedimentoh1">PROCEDIMENTOS</h1>
+      <nav class="menu-proc">
+        <button class="btn-proc ativo-proc" data-section="corporais">Corporais</button>
+        <button class="btn-proc" data-section="faciais">Faciais</button>
+      </nav>
+    </div>
+
+    <main class="conteudo-proc" id="conteudo-proc"></main>
+  </div>
+
+  <script>
+    const dadosProcedimentos = {
+      corporais: [
+        {
+          nome: "Massagem Relaxante",
+          imagem:  "MassagemRelaxante.webp",
+          imagemDetalhe: "Paginainicial/MassagemRelaxante.webp",
+          descricao: "Sessão de massagem com movimentos suaves e profundos, pensada para aliviar tensões, melhorar a circulação e promover profundo relaxamento corporal.",
+          antes: "MassagemRelaxante.webp",
+          depois: "MassagemRelaxante.webp"
+        },
+        {
+          nome: "Drenagem Linfática",
+          imagem: "DrenagemLinfatica.jpeg",
+          imagemDetalhe: "DrenagemLinfatica.jpeg",
+          descricao: "Técnica manual que estimula o sistema linfático, auxiliando na redução de inchaços e retenção de líquidos.",
+          antes: "DrenagemLinfatica.jpeg",
+          depois: "DrenagemLinfatica.jpeg"
+        },
+        {
+          nome: "Modeladora Corporal",
+          imagem: "ModeladoraCorporal.jpeg",
+          imagemDetalhe: "ModeladoraCorporal.jpeg",
+          descricao: "Massagem profunda e enérgica que ajuda a modelar o contorno corporal e ativar a circulação.",
+          antes: "ModeladoraCorporal.jpeg",
+          depois: "ModeladoraCorporal.jpeg"
+        }
+      ],
+      faciais: [
+        {
+          nome: "Limpeza de Pele Profunda",
+          imagem: "limpezadePeleProfunda.jpeg",
+          imagemDetalhe: "limpezadePeleProfunda.jpeg",
+          descricao: "Procedimento para remoção de impurezas e células mortas, promovendo renovação e viço natural à pele do rosto.",
+          antes: "limpezadePeleProfunda.jpeg",
+          depois: "limpezadePeleProfunda.jpeg"
+        },
+        {
+          nome: "Peeling Químico",
+          imagem: "PeelingQuimico.jpeg",
+          imagemDetalhe: "PeelingQuimico.jpeg",
+          descricao: "Aplicação controlada de agentes químicos que estimulam renovação celular e uniformizam o tom da pele.",
+          antes: "PeelingQuimico.jpeg",
+          depois: "PeelingQuimico.jpeg"
+        },
+        {
+          nome: "Aplicação de Botox",
+          imagem: "botox.jpeg",
+          imagemDetalhe: "botox.jpeg",
+          descricao: "Procedimento para suavizar rugas e linhas de expressão, com resultado natural e rápido.",
+          antes: "botox.jpeg",
+          depois: "botox.jpeg"
+        }
+      ]
+    };
+
+    const conteudo = document.getElementById("conteudo-proc");
+    const botoes = document.querySelectorAll(".btn-proc");
+
+    botoes.forEach(btn => {
+      btn.addEventListener("click", () => {
+        botoes.forEach(b => b.classList.remove("ativo-proc"));
+        btn.classList.add("ativo-proc");
+        carregarSecao(btn.dataset.section);
+      });
+    });
+
+    function carregarSecao(secao) {
+      const procedimentos = dadosProcedimentos[secao];
+      conteudo.innerHTML = `
+        <div class="carrossel-proc">
+          ${procedimentos.map((p, i) => `
+            <div class="item-proc ${i === 1 ? "centro-proc" : ""}" 
+              style="background-image:url('${p.imagem}')" data-index="${i}"></div>
+          `).join("")}
+        </div>
+        <div class="nome-proc" id="nome-proc">Procedimento: ${procedimentos[1].nome}</div>
+        <div id="detalhes-wrapper-proc"></div>
+      `;
+      ativarCarrossel(procedimentos);
+    }
+
+    function ativarCarrossel(procedimentos) {
+      const carrossel = document.querySelector(".carrossel-proc");
+      const nomeProc = document.getElementById("nome-proc");
+      const detalhes = document.getElementById("detalhes-wrapper-proc");
+
+      let ordem = [...procedimentos];
+
+      function render() {
+        carrossel.innerHTML = ordem.map((p, i) => `
+          <div class="item-proc ${i === 1 ? "centro-proc" : ""}"
+            style="background-image:url('${p.imagem}')"></div>
+        `).join("");
+        nomeProc.textContent = "Procedimento: " + ordem[1].nome;
+
+        detalhes.innerHTML = `
+          <div class="detalhes-proc">
+            <div class="detalhe-grid-proc">
+              <div class="detalhe-imagem-proc" style="background-image:url('${ordem[1].imagemDetalhe}')"></div>
+              <div class="detalhe-texto-proc">
+                <h2>${ordem[1].nome}</h2>
+                <p>${ordem[1].descricao}</p>
+              </div>
+            </div>
+            <div class="galeria-proc">
+              <div class="card-proc">
+                <div class="label-proc">ANTES</div>
+                <div class="img-proc" style="background-image:url('${ordem[1].antes}')"></div>
+              </div>
+              <div class="card-proc">
+                <div class="label-proc">DEPOIS</div>
+                <div class="img-proc" style="background-image:url('${ordem[1].depois}')"></div>
+              </div>
+            </div>
+          </div>
+        `;
+
+        document.querySelectorAll(".item-proc").forEach((item, i) => {
+          item.addEventListener("click", () => {
+            if (i === 0) {
+              ordem.push(ordem.shift());
+              render();
+            } else if (i === 2) {
+              ordem.unshift(ordem.pop());
+              render();
+            }
+          });
+        });
+      }
+      render();
+    }
+
+    carregarSecao("corporais");
+  </script>
+</body>
+</html>
+
+<?php
+    include("footer.php");
+?>

@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    background-color: #a8bcb3;
+    font-family: Inter;
+}
+
+/* Carrossel do Banner */
+.banner-container {
+    position: relative;
+    z-index: 1;
+    max-width: 2000px;
+    height: 720px;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 90px;
+}
+
+.banner-container img {
+    width: 100%;
+    height: 720px;
+    object-fit: cover;
+}
+
+/* Cada slide */
+.banner-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.7s ease-in-out;
+}
+
+/* Efeito fade */
+.fade {
+    animation-name: fadeEffect;
+    animation-duration: 1.7s;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.3; }
+    to   { opacity: 1; }
+}
+
+/* Slide ativo */
+.banner-slide.active {
+    opacity: 1;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .banner-container { height: 400px; }
+    .banner-container img { height: 400px; }
+}
+
+/* Seção Procedimentos Homepage */
+.procedimentos-home {
+    align-items: center;
+    text-align: center;
+    margin-top: 8%;
+    color: #5b6b66;
+    font-family: Inter;
+    font-size: 1.2rem;
+}
+.procedimentos-home h1 {
+    font-family: Brandis;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+.img-procedimentos {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+.procedimentos-home img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    margin-top:5%;
+    box-shadow: 0 4px 11px rgba(0, 0, 0, 0.3);
+}
+.procedimentos-home a {
+    color: #5b6b66;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: none;
+}
+.img-procedimentos-dois {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.botao-procedimentos {
+    background-color: #4C5954;
+    border-radius: 5%;
+    font-family: Inter;
+    font-size: 1.2rem;
+    padding: 1%;
+    text-align: center;
+    box-shadow: 0 4px 11px rgba(0, 0, 0, 0.3);
+    display: block;
+    width: fit-content;
+    margin: 3.5% 40% 7% 40%;
+    flex-wrap: nowrap;
+}
+.botao-procedimentos a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/*Seção Nossos Profissionais*/
+.nossos-profissionais {
+    display: flex;
+    flex-direction: row;
+    color:#5b6b66;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+@font-face {
+    font-family:Brandis;
+    src: url('./fontes/Brandis.otf');
+}
+.titulo-nossos-profissionais {
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 5% 27%;
+    border-top: 1px solid #5b6b66;
+    border-bottom: 1px solid #5b6b66;
+    width: fit-content;
+    padding: 2%;
+    font-family: Brandis;
+    font-weight: 400;
+    color: #5b6b66;
+}
+
+.nossos-profissionais img {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+}
+.img-e-nome {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+}
+
+
+
+/* Seção Depoimentos */
+.titulo-principal-depoimentos{
+    text-align: center;
+    margin-left: 23%;
+    width: 50%;
+    font-size: 3.5rem;
+    border-top: 1px solid #5b6b66;
+    padding: 2%;
+    font-family: Brandis;
+    font-weight: 400;
+    color: #5b6b66;
+    margin-top: 5%;
+}
+.depoimentos{
+    background-color: #fafffe74;
+    width: 50%;
+    border: 1px solid #fafffe74;
+    border-radius: 10px;
+    font-family: Inter;
+    color: #5b6b66;
+    font-size: 1.3rem;
+    margin-bottom: 5%;
+    padding: 1%;
+    text-align: center;
+    margin-left: 24%;
+    box-shadow: 0 4px 11px rgba(0, 0, 0, 0.3);
+}
+
+.titulo-depoimento{
+    font-weight: 600;
+    padding-bottom: 1%;
+    text-decoration: underline 1px;
+    text-underline-offset: 20%;
+}
+.texto-depoimento{
+    font-weight: 400;
+    font-style: italic;
+}

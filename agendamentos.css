@@ -4,150 +4,12 @@ body {
     font-family: Inter;
 }
 
-/* Menu da página */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
-    height: 140px;
-    /* Adiciona uma sombra na parte inferior */
-    box-shadow: 0 4px 11px rgba(0, 0, 0, 0.3);
-}
-
-.logo {
-    width: 190px;
-    height: auto;
-    box-sizing: border-box;
-}
-.logo img {
-    height: 250px;
-    width: auto;
-    margin-left: 30px;
-}
-
-.nav-bar {
-    color:#FFFFFF;
-    font-size: 18px;
-    font-family: Inter;
-    font-weight: 600;
-}
-
-.nav-bar a {
-    text-decoration: none;
-    color: white;
-}
-
-/* HOVER altera alguma propriedade ao passar o cursor pela categoria  */
-.nav-bar li a:hover{
-    border-bottom: #FFFFFF 2px solid;
-}
-
-.pags-nav-bar{
-    list-style: none;
-    display: inline-block;
-    padding: 30px 25px;
-    border-right: 2px solid white;
-}
-#blog{
-    border-right: none;
-}
-
-/*A partir daqui temos as informações da barra de pesquisa*/
-.search input {
-    display: flex;
-    border: 1px solid transparent;
-    align-items: center;
-    height: 51px;
-    width: 200px;
-    border-radius: 10px;
-    background-color: #FFFFFF;
-    color: #5b6b66;
-    padding: 0px 15px;
-    margin-right: 50px;
-    margin-top: 8px;
-    margin-left: 5px;
-    font-family: Inter;
-    font-weight: 400;
-    font-size: 16px;
-}
-.search img {
-    padding: 5px;
-    width: auto;
-    height: 29px;
-}
-.search button {
-    border: 1px solid #FFFFFF;
-    border-radius: 10px;
-    margin-top: -50px;
-    margin-left: 180px;
-    position: absolute;
-}
-
-.titulo-agendamentos {
-    text-align: center;
-    font-size: 3.5rem;
-    border-top: 1px solid #5b6b66;
-    border-bottom: 1px solid #5b6b66;
-    padding: 2%;
+.agendamentoh1{
+    font-size: 3rem;
     font-family: Brandis;
-    font-weight: 400;
-    color: #5b6b66;
+    color: #46524e;
+    margin-top: 5vh;
 }
-
-/* Seção Rodapé */
-footer {
-    display: flex;
-    align-items: center;
-    background-color: #5b6b66;
-    margin: 0;
-    font-family: Inter;
-    color: #FFFFFF;
-    font-size: 24px;
-    font-weight: 400;
-    max-height: 376px;
-}
-.logo-rodape{
-    width: 400px;
-    height: auto;
-    margin-left: 50px;
-}
-.icones-rodape{
-    display: flex;
-    flex-direction: column;
-    width: 80px;
-    height: auto;
-    margin-left: 60px;
-}
-.icones-rodape a{
-    text-decoration: none;
-}
-.texto-icones-rodape{
-    display: flex;
-    flex-direction: column;
-    margin-left: 80px;
-    margin-top: 20px;
-    width: 250px;
-}
-.texto-icones-rodape a{
-    text-decoration: none;
-    color: #FFFFFF;
-}
-.texto-icones-rodape p{
-    margin-bottom: 23px;
-}
-.texto-adicional{
-    display: flex;
-    flex-direction: column;
-    margin-left: 110px;
-    margin-top: -100px;
-}
-.texto-adicional a{
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-/* Página Agendamentos */
 
 /* Container do formulário */
 .form-container {
@@ -156,9 +18,11 @@ footer {
     padding: 30px 40px;
     border-radius: 15px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    width: 320px;
+    width: 25%; /* largura proporcional no desktop */
+    min-width: 330px;  /* não fica menor que isso */
+    max-width: 450px;  /* limite para não ficar grande demais */
     text-align: center;
-    margin-bottom: 50px;
+    margin: 0 auto 7% auto; /* centraliza sempre */
 }
 
 /* Campos de entrada */
@@ -192,6 +56,47 @@ footer {
     box-sizing: border-box;
 }
 
+/* Responsividade */
+@media (max-width: 900px) {
+    .form-container {
+        width: 60%; /* mantém grande */
+        min-width: 330px;
+        max-width: 450px;
+        padding: 25px 30px;
+    }
+}
+
+@media (max-width: 650px) {
+    .form-container {
+        width: 75%; /* ainda grande */
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        width: 90%; /* ocupa quase tudo */
+        min-width: 280px; /* evita ficar muito pequeno */
+        padding: 25px;
+    }
+
+    .form-container label {
+        font-size: 1.3rem;
+    }
+
+    .form-container input {
+        font-size: 0.95rem;
+        padding: 4%;
+    }
+}
+
+@media (max-width: 360px) {
+    .form-container {
+        width: 95%;
+        min-width: 260px;
+    }
+}
+
 /* Botão de envio */
 .form-container button {
     width: 40%;
@@ -207,4 +112,37 @@ footer {
 
 .form-container button:hover {
     background-color: #4C5954;
+}
+
+/*Botão responsivo*/
+
+@media (max-width: 900px) {
+    .form-container button {
+        width: 60%; /* botão mais largo */
+        padding: 4%; /* reduz um pouco o padding */
+        font-size: 1.2rem; /* fonte levemente menor */
+    }
+}
+
+@media (max-width: 650px) {
+    .form-container button {
+        width: 80%;
+        padding: 4.5%;
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container button {
+        width: 100%; /* ocupa toda a largura */
+        padding: 5%;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .form-container button {
+        font-size: 1rem; 
+        padding: 6%; 
+    }
 }
