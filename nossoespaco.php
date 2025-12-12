@@ -16,22 +16,27 @@
 ?>
 
 <body>
+    <h1 class="titulo-nossos-profissionais">NOSSO ESPAÇO</h1>
 <!--Conteúdo da página-->  
         <section>
-            <h1 class="titulo-nossos-profissionais">NOSSO ESPAÇO</h1>
+           
             <div class="bloco-um-nosso-espaco">
                 <img src="imagens da clinica/Imagem Nosso Espaço (1).jpg" alt="Imagem da clínica">
-                <p>Na Carvi Clinic, acreditamos que o ambiente físico é fundamental para <strong>potencializar os resultados</strong>
+                <div class="titulo-texto">
+                <h1 id="titulo-um">Conheça o espaço em que cuidaremos de você</h1>
+                <p>Aqui, acreditamos que o ambiente físico é fundamental para <strong>potencializar os resultados</strong>
                 dos tratamentos e garantir o <strong>bem-estar integral</strong> dos nossos clientes. Nosso espaço foi 
                 meticulosamente projetado para ser um refúgio de <strong>tranquilidade e sofisticação.</strong>
                 Desde o momento em que você adentra nossa recepção, notará o equilíbrio entre um <strong>design moderno, 
                 clean e elegante</strong>, e uma atmosfera acolhedora.</p>
+                <button id="botao"><a href="#endereco">Ver endereço da Carvi Clinic</a></button>
+                </div>
             </div>
-            <p class="texto-meio">O coração da Carvi Clinic reside na precisão de nossas salas de tratamento. 
+            <!-- <p class="texto-meio">O coração da Carvi Clinic reside na precisão de nossas salas de tratamento. 
                 Equipadas com tecnologias de última geração alinhadas às mais rigorosas normas de segurança, garantimos 
                 que cada procedimento seja realizado com máxima eficácia e conforto. Priorizamos a funcionalidade e a 
                 higiene impecável em cada detalhe, assegurando que você esteja sempre em um ambiente esterilizado e 
-                tecnologicamente avançado.</p>
+                tecnologicamente avançado.</p> -->
 
             <div class="bloco-dois-nosso-espaco">
                 <img src="imagens da clinica/Imagem Nosso Espaço (3).jpg" alt="">
@@ -39,13 +44,25 @@
                 <img src="imagens da clinica/Imagem Nosso Espaço (5).jpg" alt="">
             </div>
             
-            <div class="texto-tres">
-                <p>Nosso atendimento é altamente personalizado e humanizado. Dedicamos tempo para ouvir suas expectativas,
-                explicar cada etapa do seu Protocolo Esculpido e oferecer um acompanhamento atencioso, do pré ao 
-                pós-procedimento. Na Carvi Clinic, você não é apenas um paciente, mas um parceiro na jornada de realçar 
-                sua beleza única com arte, precisão e total confiança.</p>
-            </div>
+            <!-- <div class="texto-dois">
+                <p>Dedicamos tempo para ouvir suas expectativas, explicar cada etapa do 
+                seu <br> procedimento e oferecer um acompanhamento atencioso, do pré ao 
+                pós-<br>procedimento. Na Carvi Clinic, você não é apenas um paciente, mas um parceiro na <br>
+                jornada para realçar sua beleza única com <strong>arte, precisão e total confiança</strong>.</p>
+            </div> -->
         </section>
+
+        <div id="endereco">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.5044752696886!2d-43.36962662489749!3d-22.968469579211774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd9828e978c17%3A0x4401bc4f8e2ca033!2sAv.%20Ator%20Jos%C3%A9%20Wilker%2C%20600%20-%20Jacarepagu%C3%A1%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022775-024!5e0!3m2!1sen!2sbr!4v1765516176869!5m2!1sen!2sbr" width="50%" height="450" style="" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class= "titulo-texto">
+        <h2>Endereço: Av. Ator José Wilker, 600 - Jacarepaguá, Rio de Janeiro</h2>
+        <p>Entre em contato conosco: <br>
+        <a href="https://wa.me/5521974729384">WhatsApp: (21) 97472-9384</a> <br>
+        <a href="https://www.instagram.com/carviclinic/">Instagram: @carviclinic</a>
+        </p>
+        <button id="botao"><a href="agendamentosint.php">Agendar consulta</a></button>
+        </div>
+        </div>
 </body>
 </html>
 

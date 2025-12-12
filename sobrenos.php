@@ -17,40 +17,47 @@
 
 <body>
 
-<h1 class="titulo-nossos-profissionais">SOBRE NÓS</h1>
+<h1 class="titulo-sobre-nos">SOBRE NÓS</h1>
+    
     <div class="sobre-nos">
         <img src="imagens da clinica/Carvi Clinic foto logo.jpg" alt="">
-        <p>A escolha do nome, inspirado na palavra "Carve", reflete a <strong>nossa missão</strong> 
-            de "esculpir" a <strong>beleza única</strong> 
-            de cada indivíduo, ressaltando a arte e a precisão envolvidas em <strong>nossos tratamentos.</strong>
-            Na Carvi Clinic, levamos essa filosofia de "esculpir" além do procedimento estético, 
-            aplicando-a na criação de uma <strong>experiência completa e personalizada.</strong>
+        <div class="titulo-texto">
+        <h1 id="titulo-um">Sobre a Carvi Clinic</h1>
+        <p> 
+        Na Carvi Clinic, acreditamos que a verdadeira beleza reside na confiança e no bem-estar integral.
+        Mais do que uma clínica de estética, somos um espaço dedicado ao seu cuidado, onde a tecnologia avançada
+        e o atendimento humanizado se unem para realçar o que há de mais bonito em você.
         </p>
+        </div>
     </div>  
 
     <!--Diferencial da Carvi Clinic-->
-    <h1 class="titulo-diferencial">Qual é o nosso diferencial?</h1>
+    <h1 class="titulo-diferencial">Nossos serviços seguem esses princípios:</h1>
     <div class="diferencial">
         <p>
-            <strong>Tratamentos Personalizados:</strong> <br> Cada cliente recebe um plano de tratamento desenhado exclusivamente para suas necessidades e objetivos.
+            <strong>Tratamentos Personalizados</strong> <br><br> Cada cliente recebe um plano de tratamento desenhado exclusivamente para suas necessidades e objetivos.
         </p>
         <p>
-            <strong>Experiência Integrada:</strong> <br> Oferecemos uma gama completa de serviços, incluindo consultoria de estilo e mudança de visual, para uma 
+            <strong>Experiência Integrada</strong> <br><br> Oferecemos uma gama completa de serviços, incluindo consultoria de estilo e mudança de visual, para uma 
             transformação abrangente.
         </p>
         <p>
-            <strong>Especialização em Visagismo:</strong> <br> Utilizamos o visagismo para criar harmonia e equilíbrio, ressaltando as características únicas de cada 
+            <strong>Especialização em Visagismo</strong> <br><br> Utilizamos o visagismo para criar harmonia e equilíbrio, ressaltando as características únicas de cada 
             cliente.
         </p>
     </div>
 
     <div class="sobre-nos-dois">
+        <img src="imagens da clinica/Imagem Sobre Nós (2).jpg" alt="">
+        <div class="titulo-texto">
+        <h1 id="titulo-dois">Nosso destaque no mundo da estética</h1>
         <p>Nosso diferencial reside na fusão harmoniosa entre <strong>tecnologia de ponta</strong>, baseada em <strong>ciência e evidência</strong>, 
             e um olhar artístico e <strong>humanizado</strong>. Cada jornada na Carvi Clinic começa com uma Avaliação, uma consulta 
             detalhada que busca <strong>compreender</strong> não apenas as necessidades físicas, mas também as expectativas e o estilo 
             de vida do cliente.
         </p>
-        <img src="imagens da clinica/Imagem Sobre Nós (2).jpg" alt="">
+        <button type="submit" id="botao"><a href="agendamentos_int.php">Quero fazer um agendamento</a></button>
+        </div>
     </div>
 
     <!-- Horários de funcionamento e vias de contato-->
@@ -58,15 +65,17 @@
         <h2 class="horarios">HORÁRIO DE FUNCIONAMENTO</h2>
         <p>Quinta, sexta e sábado - 9h às 18h</p>
         <h2 class="contatos">ENTRE EM CONTATO</h2>
-        <p>Via WhatsApp: (21)97472-9384 <br>
-        Via E-mail: contatocarviclinic@gmail.com <br>
-        Via Intagram: @carviclinic
+        <p><a href="https://wa.me/5521974729384">Via WhatsApp: (21)97472-9384</a><br>
+        <a href="https://mail.google.com/mail/u/0/?hl=pt-BR#inbox?compose=CllgCKCHTlvrmGFmPRjmrLWjjXXpPWtFBbPXTVbhxjkChFDklDhpvcgbjZmhDKHXwvgBXNgMPmL">Via E-mail: contatocarviclinic@gmail.com</a> <br>
+        <a href="https://www.instagram.com/carviclinic/">Via Intagram: @carviclinic</a>
         </p>
     </div>
 
     <!--Missão, Visão, Valores-->
-    <h1 class="titulo-missao-visao-valores">Nossa Missão, Visão e Valores</h1>
     <div class="missao-visao-valores">
+        <img src="imagens da clinica/Imagem Atendimento.jpg" alt="Atendimento">
+        <div class="titulo-texto">
+        <h1 class="titulo-missao-visao-valores">Nossa Missão, Visão e Valores</h1>
         <p>
             <strong>Missão:</strong> Ajudar pessoas a expressarem sua identidade, através de uma jornada personalizada de 
             auto-descoberta.<br>
@@ -74,7 +83,7 @@
             e personalizada que inspira pessoas a abraçarem sua verdadeira essência e viverem sua melhor versão. <br>
             <strong>Valores:</strong> Sustentabilidade, Autenticidade, Inovação, Excelência e Personalização.
         </p>
-        <img src="imagens da clinica/Imagem Atendimento.jpg" alt="Atendimento">
+        </div>
     </div>
     
 </body>
